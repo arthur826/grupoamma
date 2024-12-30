@@ -1,0 +1,107 @@
+.card-produtos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  max-width: 280px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 36px 24px;
+  background: linear-gradient(
+      to top right,
+      #ec1651 23%,
+      rgba(255, 203, 0, 0.6),
+      rgba(255, 203, 0, 0)
+    ),
+    url("/img/imagem-card-produto.jpg");
+  background-size: cover;
+  background-position: center;
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Inter";
+    color: #fff;
+    margin-bottom: 14px;
+  }
+  p {
+    color: $text-color-yellow;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 112%;
+    letter-spacing: -1px;
+  }
+}
+
+.card-blog {
+  width: 100%;
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: -5rem;
+  box-shadow: 0px 15px 27px -8px #00000030;
+  .capa {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    .title-card {
+      font-family: "Inter";
+      font-size: 16px;
+      color: $text-color-three;
+      font-weight: 500;
+      margin-bottom: 1.8rem;
+    }
+    p {
+      font-size: 14px;
+      color: $text-color-one;
+      margin-bottom: 1.8rem;
+    }
+    a {
+      color: $color-red;
+      font-weight: 600;
+      font-size: 14px;
+      font-family: "Inter";
+    }
+  }
+}
+
+.bandeiras {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  .card-bandeiras {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    background-color: $color-yellow-two;
+    padding: 80px 100px;
+    .logo {
+      width: 100%;
+      max-width: 22rem;
+      margin-bottom: 6rem;
+    }
+    p {
+      margin-bottom: 5.6rem;
+    }
+    &.blue {
+      background-color: $color-blue;
+    }
+  }
+}
